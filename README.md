@@ -1,5 +1,6 @@
-# study-js-deep-dive
-
+<h1>
+<img width="350" src="https://img.shields.io/badge/study--js--deep--dive-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white">
+</h1>
 <img src="./images/title.png" width="100%" alt="Title" />
 
 ## 스터디 멤버
