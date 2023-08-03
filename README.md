@@ -3,36 +3,50 @@
 </h1>
 <img src="./images/title.png" width="100%" alt="Title" />
 
-## 스터디 멤버
+## :bow: 스터디 멤버
 
 |   ![](https://github.com/minjj0905.png?width=100)    | ![](https://github.com/parkyolo.png?width=100)  | ![](https://github.com/dev-hamster.png?width=100) | ![](https://github.com/beomxtone.png?width=100) |
 |:------------------------------------------------:|:--------------------------------------------:|:---------------------------------------------:|:--------------------------------------------:|
 |         [김민정](https://github.com/minjj0905)         |       [박지영](https://github.com/parkyolo)       |      [박진아](https://github.com/dev-hamster)       |      [서범석](https://github.com/beomxtone)       |
 |                목표                |             목표              |      목표       |              목표               |
 
-## 스터디 시간
+## :clock1: 스터디 시간
 
 일시 : 매주 화요일 18:30 ~ 20:30
 
 장소 : 어딘가
 
-## 스터디 진행방식
+## :clipboard: 스터디 진행방식
 
 - 매 주 진행자를 선정한다.
 - 매 주마다 Issue를 생성해 관리하고, 목차 하나마다 Pull Request를 올린다.
 - 오프라인 스터디를 진행할 때, comment 및 merge 작업을 진행한다.
 - 마지막 주가 끝나면 다음 목차 범위를 정한다.
 
-## 스터디 규칙
+## :hammer: 스터디 규칙
+
 - Limit 2 hours
 - 진행자는 다른 사람들이 책을 읽었는지 확인하기 위해 퀴즈를 준비할 수 있다.
 - 진행자가 자료를 준비하지 못했거나, 책을 읽어오지 않은 사람은 당일 커피 값을 계산한다.
 
-## TODO 
+## :rocket: 참여 방법
+
+1. 이 저장소를 `fork` 후, 로컬에서 `branch`를 생성해 작업한다.
+2. branch naming 규칙은 다음과 같다.
+    - 목차 별로 `study-<목차 숫자>` 브랜치로 작업한다.
+    - e.g. 4장이면 `study-04`
+3. 한 목차의 정리가 끝나면 자신의 브랜치에 `push` 한다.
+4. [커밋 규칙](https://github.com/deep-dive-to-js/study-js-deep-dive/tree/main/commit_convention)을 지켜 커밋한다.
+5. 한 목차마다 원본 저장소에 `PR` 을 올리고, `issue` 를 링크한다.
+6. (optional) 해당 주차의 진행자가 올린 PR을 리뷰한다.
+
+## :pencil2: TODO
+
 - ~~pr 템플릿 작성 범석님~~ `완료`
 - 마크다운 템플릿 범석님 `진행중`
 
-## 스터디 일정
+## :date: 스터디 일정
+
 | 회차 | 이름 | 목차 |
 |---|---|---|
 |1주차 | 서범석 | 4 5 6 |
