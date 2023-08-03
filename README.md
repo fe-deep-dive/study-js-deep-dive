@@ -31,13 +31,10 @@
 
 ## :rocket: 참여 방법
 
-1. 이 저장소를 `fork` 후, 로컬에서 `branch`를 생성해 작업한다.
-2. branch naming 규칙은 다음과 같다.
-    - 목차 별로 `study-<목차 숫자>` 브랜치로 작업한다.
-    - e.g. 4장이면 `study-04`
-3. 한 목차의 정리가 끝나면 자신의 브랜치에 `push` 한다.
-4. [커밋 규칙](https://github.com/deep-dive-to-js/study-js-deep-dive/tree/main/commit_convention)을 지켜 커밋한다.
-5. 한 목차마다 원본 저장소에 `PR` 을 올리고, `issue` 를 링크한다.
+1. 이 저장소를 `fork` 후, 로컬에서 공부 내용을 정리한다.
+2. 한 목차의 정리가 끝나면 자신의 저장소에 `push` 한다.
+3. [커밋 규칙](https://github.com/deep-dive-to-js/study-js-deep-dive/tree/main/commit_convention)을 지켜 커밋한다.
+4. 한 목차마다 원본 저장소에 `PR` 을 올리고, `issue` 를 링크한다.
 6. (optional) 해당 주차의 진행자가 올린 PR을 리뷰한다.
 
 ## :pencil2: TODO
