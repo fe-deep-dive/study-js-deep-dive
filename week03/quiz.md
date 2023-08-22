@@ -56,7 +56,7 @@ var foo = {
 
 console.log(foo.name);        // 1번
 console.log(foo.hello);       // 2번
-console.log(foo.[age]);       // 3번
+console.log(foo[age]);       // 3번
 console.log(foo.'last-name'); // 4번
 ```
 
