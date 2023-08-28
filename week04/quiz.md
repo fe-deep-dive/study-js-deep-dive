@@ -93,7 +93,7 @@ bar();
 
 
 > 5. 다음 두 개의 `foo` 함수는 어떤 차이를 가지는지 설명하고, 실행 결과를 설명해라.
-> 6. 
+
 ```jsx
 function foo() {
   console.log("first");
