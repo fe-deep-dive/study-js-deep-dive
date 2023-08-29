@@ -83,6 +83,8 @@ console.dir 함수는 함수의 파라미터까지 출력하고, console.log는 
 console.log(sub(2, 5)) 에서는 undefined를 함수로서 호출하기 때문에 TypeError가 발생한다.
 -->
 
+<br />
+
 > 4. 다음 코드의 실행결과를 설명하고, 왜 그렇게 동작하는지 설명해라.
 
 ```jsx
@@ -108,6 +110,8 @@ bar();
 foo 함수에서는 foo 함수 스코프의 지역변수인 x가 재선언이 가능한 키워드인 var를 사용했기 때문에 2가 출력된다.
 bar 함수에서는 bar 함수 스코프의 지역변수인 x가 재선언이 불가한 키워드인 let을 사용하여 SntaxError: Identifier 'x' has already been declared가 발생한다.
 -->
+
+<br />
 
 > 5. 다음 두 개의 `foo` 함수는 어떤 차이를 가지는지 설명하고, 실행 결과를 설명해라.
 
