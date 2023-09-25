@@ -218,6 +218,48 @@ with (Math) {
 
 <br/>
 
+### **20.6 strict mode 적용에 의한 변화**
+
+**20.6.1 일반 함수의 this**
+
+일반 함수에서 `this`를 호출하면 `undefined`가 반환되며 에러도 발생하지 않는다. (?)
+
+뭔가 이상한데, 예시를 한 번 보자
+
+```jsx
+(function () {
+  "use strict";
+
+  // 생성자 함수가 아니면 this가 필요 없는데 에러는 나지 않는다..
+  function javascript() {
+    console.log(this); // undefined
+  }
+  javascript();
+
+  // 대문자를 넣어주면 생성자 함수라서 this를 쓸 수 있다..
+  function Javascript() {
+    console.log(this); // Javascript
+  }
+  new Javascript();
+})();
+```
+
+> 생성자 함수와 일반 함수의 구분은 대소문자로 한다...
+
+**20.6.2 arguments 객체**
+
+strict mode에서는 `arguments` 객체의 값을 재할당해도 반영되지 않는다.
+
+```jsx
+(function (a) {
+  "use strict";
+
+  a = 2;
+  console.log(arguments); // { 0: 1, length: 1 ... }
+  console.log(a); // 2
+})();
+```
+
 <details>
 <summary>ESLint</summary>
 
