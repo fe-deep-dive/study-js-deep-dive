@@ -5,10 +5,9 @@
 
 ## :bow: 스터디 멤버
 
-|<img src="https://github.com/minjj0905.png" width="120" height="120"/>|<img src="https://github.com/parkyolo.png" width="120" height="120">|<img src="https://github.com/dev-hamster.png" width="120" height="120">|<img src="https://github.com/beomxtone.png" width="120" height="120">|
-|:------------------------------------------------:|:--------------------------------------------:|:---------------------------------------------:|:--------------------------------------------:|
-|         [김민정](https://github.com/minjj0905)         |       [박지영](https://github.com/parkyolo)       |      [박진아](https://github.com/dev-hamster)       |      [서범석](https://github.com/beomxtone)       |
-
+| <img src="https://github.com/minjj0905.png" width="120" height="120"/> | <img src="https://github.com/parkyolo.png" width="120" height="120"> | <img src="https://github.com/dev-hamster.png" width="120" height="120"> | <img src="https://github.com/beomxtone.png" width="120" height="120"> |
+| :--------------------------------------------------------------------: | :------------------------------------------------------------------: | :---------------------------------------------------------------------: | :-------------------------------------------------------------------: |
+|                 [김민정](https://github.com/minjj0905)                 |                [박지영](https://github.com/parkyolo)                 |                [박진아](https://github.com/dev-hamster)                 |                [서범석](https://github.com/beomxtone)                 |
 
 ## :clock1: 스터디 시간
 
@@ -44,13 +43,13 @@
 
 ## :date: 스터디 일정
 
-| 회차 | 진행자 | 목차 | 참여 인원 |
-|---|---|---|---|
-|1주차 | 서범석 | 4 5 6 | All |
-|2주차 | 박진아 | 7 8 9(~9.3) | All |
-|3주차 | 박지영 | 9(9.4~) 10 11 | All |
-|4주차 | 김민정 | 12 13 | All |
-|5주차 | 박지영 | 14 15 16 |  |
-|6주차 | 김민정 | 17 18 |  |
-|7주차 | 박진아 | 19 |  |
-|8주차 | 서범석 | 20 21 22 |  |
+| 회차  | 진행자 | 목차          | 참여 인원              |
+| ----- | ------ | ------------- | ---------------------- |
+| 1주차 | 서범석 | 4 5 6         | All                    |
+| 2주차 | 박진아 | 7 8 9(~9.3)   | All                    |
+| 3주차 | 박지영 | 9(9.4~) 10 11 | All                    |
+| 4주차 | 김민정 | 12 13         | All                    |
+| 5주차 | 박지영 | 14 15 16      | All                    |
+| 6주차 | 김민정 | 17 18         | All                    |
+| 7주차 | 박진아 | 19            | 김민정, 박지영, 박진아 |
+| 8주차 | 서범석 | 20 21 22      |                        |
