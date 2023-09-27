@@ -236,15 +236,16 @@ with (Math) {
   }
   javascript();
 
-  // 대문자를 넣어주면 생성자 함수라서 this를 쓸 수 있다..
+  // 생성자 함수로 사용
   function Javascript() {
     console.log(this); // Javascript
   }
+  // new 키워드와 함께 사용하면 생성자로 인식
   new Javascript();
 })();
 ```
 
-> 생성자 함수와 일반 함수의 구분은 대소문자로 한다...
+> 생성자 함수와 일반 함수의 구분은 `new` 키워드로 한다.
 
 **20.6.2 arguments 객체**
 
