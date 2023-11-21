@@ -35,7 +35,7 @@ const numObj = new Number(2024);
 console.log(numObj); // Number {[[PrimitiveValue]]: 2024}
 ```
 
-이때, 인수를 수자로 변환할 수 없으면 NaN을 [[NumberData]] 내부 슬롯에 할당한 Number 래퍼 객체를 생성함 
+이때, 인수를 숫자로 변환할 수 없으면 NaN을 [[NumberData]] 내부 슬롯에 할당한 Number 래퍼 객체를 생성함 
 
 ```jsx
 const numObj = new Number('sleeping..zZZ...');
