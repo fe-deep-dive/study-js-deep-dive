@@ -149,7 +149,7 @@ const target = 'Break time. Kami make that time.';
 // 임의의 3자리 문자열을 대소문자를 구별하여 전역 검색한다.
 const regExp = /.../g;
 
-target.match(regExp); // ['time ', 'thi', 's a', 'll ', 'the', 're ', 'time?']
+target.match(regExp); // ['Bre', 'ak ', 'tim', 'e. ', 'Kam', 'i m', 'ake', ' th', 'at ', 'tim']
 ```
 
 **31.5.3 반복 검색**
