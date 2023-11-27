@@ -25,7 +25,7 @@ Math.abs(-1); // 1
 Math.abs(''); // 0
 Math.abs([]); // 0
 Math.abs(null); // 0
-Math.abs(undefinted); // NaN
+Math.abs(undefined); // NaN
 Math.abs({}); // NaN
 Math.abs('string'); // NaN
 Math.abs(); // NaN
@@ -57,7 +57,7 @@ Math.ceil(); // NaN
 
 **Math.floor**
 
-인수로 전달된 숫자의 소수점 이하를 **내림**한 정수를 반환하다. Math.ceil 메서드의 반대 개념이다.
+인수로 전달된 숫자의 소수점 이하를 **내림**한 정수를 반환한다. Math.ceil 메서드의 반대 개념이다.
 
 ```jsx
 Math.floor(1.9); // 1
