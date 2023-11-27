@@ -71,9 +71,9 @@ Number(false); // 0
 ```
 
 ```jsx
-// a와 b를 뺀 절대값이 Number.EPSLION 보다 작으면 같은 수로 인정
+// a와 b를 뺀 절대값이 Number.EPSILON 보다 작으면 같은 수로 인정
 function isEqual(a, b){
-	return Math.abs(a-b) < Number.EPSLION;
+	return Math.abs(a-b) < Number.EPSILON;
 }
 
 isEqual(0.1+0.2, 0.3); // true
@@ -120,7 +120,7 @@ Number.MAX_SAFE_INTEGER; // 900719925474099
 자바스크립트에서 안전하게 표현할 수 있는 가장 작은 정수값.
 
 ```jsx
-Number.MIN_SAFE_INTEGER; // -9007199254740991
+Number.MIN_SAFE_INTEGER; // -900719925474099
 ```
 
 **Number.POSITIVE_INFINITY**
@@ -249,7 +249,7 @@ Number.isSafeInteger(Infinity); // false
 
 **Number.prototype.toExponential**
 
-숫자를 지수 표기법으로 변환해 문자여 반환함.
+숫자를 지수 표기법으로 변환해 문자열을 반환함.
 
 - 지수 표기법이란?
     
@@ -263,9 +263,9 @@ Number.isSafeInteger(Infinity); // false
 인수로 소수점 이하로 표현할 자릿수를 전달할 수 있음.
 
 ```jsx
-(100.12345).toExponential**(2); // '1.00e+2'**
-(100.12345).toExponential**(3); // '1.001e+2'**
-(100.12345).toExponential**(4); // '1.0012e+2'**
+(100.12345).toExponential(2); // '1.00e+2'
+(100.12345).toExponential(3); // '1.001e+2'
+(100.12345).toExponential(4); // '1.0012e+2'
 ```
 
 참고로 숫자 리터럴과 함께 Number 프로토타입 메서드를 사용할 경우 에러가 발생함.
@@ -279,7 +279,7 @@ Number.isSafeInteger(Infinity); // false
 자바스크립트는 숫자 뒤의 .를 부동 소수점 숫자의 소수 구분 기호로 해석한다.
 
 ```jsx
-// 100은 Numbera 래퍼 객체임
+// 100은 Number 래퍼 객체임
 // 소수 구분 기호로 해석함
 // 따라서 .을 소수 구분 기호로 해석해 에러가 발생함
 100.toExponential(); // SyntaxError: Invalid or unexpected token
