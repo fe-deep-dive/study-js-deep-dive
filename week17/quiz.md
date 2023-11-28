@@ -11,9 +11,9 @@
 3. 문제의 정답은 주석으로 표기한다.
 -->
 
-> 1. 아래 출력 결과를 설명하세요
+> 1. 아래 출력 결과를 설명하세요
 
-```
+```jsx
 const mySymbol1 = Symbol.for('心볼');
 const mySymbol2 = Symbol('心볼');
 const mySymbol3 = Symbol.for('心볼');
