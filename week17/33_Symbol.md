@@ -18,7 +18,7 @@ ES6에서 도입된 7번째 **데이터 타입**으로 변경이 불가능한 **
 ```jsx
 // Symbol 함수를 호출해 유일무이한 심벌 값을 생성한다.
 const mySymbol = Symbol();
-console.log(typeof mySymbol()); // symbol
+console.log(typeof mySymbol); // symbol
 
 // 심벌 값은 외부로 노출되지 않아 확인할 수 없다.
 console.log(mySumbol); // Symbol();
@@ -90,7 +90,7 @@ console.log(s1===s2); // true
 전역 심벌 레지스토리에 저장된 심벌 값의 키를 추출할 수 있다.
 
 ```jsx
-// 전역 심벌 레지스토리에 '킹왕짱 졸려'라는 키로 저장된 심벌 값이 ㅇ ㅓㅂㅅ으면 새로운 심벌 값을 생성
+// 전역 심벌 레지스토리에 '킹왕짱 졸려'라는 키로 저장된 심벌 값이 없으면 새로운 심벌 값을 생성
 const s1 = Symbol.for('킹왕짱 졸려');
 Symbol.keyFor(s1); // '킹왕짱 졸려'
 
@@ -169,7 +169,7 @@ if (myDirection === Direction.UP){
 
 ```jsx
 const obj = {
-	[Symbol.for('mySymbol'): 1
+    [Symbol.for('mySymbol')]: 1
 };
 
 obj[Symbol.for('mySymbol')]; // 1
