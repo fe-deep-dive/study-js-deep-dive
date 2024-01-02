@@ -1585,16 +1585,16 @@ input 요소의 value 어트리뷰트는 어트리뷰트 노드로 변환되어 
 - HTML 어트리뷰트와 DOM 프로퍼티의 대응 관계
 
   - id 어트리뷰트와 id 프로퍼티는 1:1 대응하며, 동일한 값으로 연동한다.
-  - input 요소의 value 어트리뷰트는 value 프로퍼티와 1:1 대응한다. 하지만 value 어트리뷰는 초기 상태를, value 프로퍼티는 최신 상태를 갖는다.
+  - input 요소의 value 어트리뷰트는 value 프로퍼티와 1:1 대응한다. 하지만 value 어트리뷰트는 초기 상태를, value 프로퍼티는 최신 상태를 갖는다.
   - class 어트리뷰트는 className, classList 프로퍼티와 대응한다.
   - for 어트리뷰트는 htmlFor 프로퍼티와 1:1 대응한다.
   - td 요소의 colspan 어트리뷰트는 대응하는 프로퍼티가 존재하지 않는다.
   - textContent 프로퍼티는 대응하는 어트리뷰트가 존재하지 않는다.
   - 어트리뷰트 이름은 대소문자를 구별하지 않지만 대응하는 프로퍼티 키는 카멜 케이스를 따른다(maxlength → maxLength).
 
-- DOM 프로퍼티 값의 
+- DOM 프로퍼티 값의 타입
 
-  getAttribute메서드로 취득한 어트리뷰트 값은 언제나 문자열이다.
+  getAttribute 메서드로 취득한 어트리뷰트 값은 언제나 문자열이다.
 
   하지만 DOM 프로퍼티로 취득한 최신 상태 값은 문자열이 아닐 수도 있다. 예를 들어, checkbox 요소의 checked 어트리뷰트 값은 문자열이지만 checked 프로퍼티 값은 불리언 타입이다.
 
