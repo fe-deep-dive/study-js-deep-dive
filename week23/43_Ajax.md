@@ -215,7 +215,7 @@ XMLHttpRequest 객체는 다양한 프로퍼티와 메서드를 제공한다. �
   |onprogress|HTTP 요청에 대한 응답을 받는 도중 주기적으로 발생|
   |onabort|abort 메서드에 의해 HTTP 요청이 중단된 경우|
   |**onerror**|HTTP 요청에 에러가 발생한 경우|
-  |**onload**|HTTP 요청이 성공적으로 완료하나 경우|
+  |**onload**|HTTP 요청이 성공적으로 완료한 경우|
   |ontimeout|HTTP 요청이 초과한 경우|
   |onloadend|HTTP 요청이 완료한 경우, HTTP 요청이 성공 또는 실패하면 발생
 
@@ -280,7 +280,7 @@ xhr.send();
   
   |HTTP 요청 메서드|종류|목적|페이로드|
   |---|---|---|---|
-  |GET|index/retrieve|모든/특저어 리소스 취득|X|
+  |GET|index/retrieve|모든/특정 리소스 취득|X|
   |POST|create|리소스 생성|O|
   |PUT|replace|리소스의 전체 교체|O|
   |PATCH|modify|리소스의 일부 수정|O|
@@ -315,7 +315,7 @@ xhr.send();
   
   페이로드가 객체인 경우 반드시 JSON.stringify 메서드를 사용하여 직렬화한 다음 전달해야 한다.
   
-  ````jsx
+  ```jsx
   xhr.send(JSON.stringify({id: 1, content: 'HTML', completed: false }));
   ```
   
@@ -407,7 +407,7 @@ xhr.onreadystatechange = () => {
   // status 프로퍼티 값이 200이 아니면 에러가 발생한 상태다.
   if (xhr.status === 200) {
     console.log(JSON.parse(xhr.response));
-    // {userId: 1, id: 1, title: "delectus aut autem", complted:false}
+    // {userId: 1, id: 1, title: "delectus aut autem", completed:false}
   } else {
     console.log('Error', xhr.status, xhr.statusText);
   }
