@@ -250,8 +250,8 @@ const async = (generatorFunc) => {
   return onResolved; // (3)
 };
 
-// (1)
-async(function* fetchTodo() {
+
+async(function* fetchTodo() { // (1)
   const url = `${BASE_URL}/todos/1`;
 
   const response = yield fetch(url); // (6)
@@ -260,14 +260,35 @@ async(function* fetchTodo() {
 })(); //(4)
 ```
 
-- (1): async 함수 호출
-- (2): fetchTodo를 호출해 제너레이터 객체를 생성
-- (3): 상위 스코프의 generator 변수를 기억하는 클로저인 onResolved 반환
-- (4): async 함수가 반환한 onResolved 함수를 즉시 호출
-- (5): (2)에서 생성한 제너레이터 객체의 next 메서드를 처음 호출
+1. fetchTodo를 호출해 제너레이터 객체 생성:
+   - async 함수가 호출되고(1) 인수로 전달받은 제너레이터 함수 fetchTodo를 호출
+   - 제너레이터 객체를 생성(2)하고 onResolved 함수를 반환(3) 
+2. fetch(url) yield 하기:
+   - next 메서드가 처음 호출(5)되고 fetch(url)까지 실행
+   - 이터레이터 리절트 객체 `{ value: Promise { <pending> }, done: false }` 반환
+   - Response 객체를 onResolved 함수에 인수로 전달하면서 재귀 호출(7)
+3. response.json() yield 하기
+   - 인수로 전달된 Response 객체를 next 메서드에 인수로 전달하면서 두번째로 next 호출
+   - 인수는 response.json()의 `response` 변수에 할당 됨
+   - response.json()까지 실행
+   - 이터레이터 리절트 객체 `{ value: Promise { <pending> }, done: false }` 반환
+   - response 프로미스를 resolve한 todo 객체를 onResolved 함수에 인수로 전달하면서 재귀 호출
+4. todo 출력하기
+   - 인수로 전달된 todo 객체를 next 메서드에 인수로 전달하면서 세번째로 next 호출
+   - fetchTodo의 todo 변수에 할당되고 제너레이터 함수 fetchTodo가 끝까지 실행
+5. 종료하기
+   - 이터레이터 리절트 객체 `{ value: undefined, done: true }` 반환
+   - undefined를 그대로 반환하고 처리 종료
 
-1. next 메서드가 처음 호출하면 제너레이터 함수 fetchTodo의 첫 번째 yield 문(6)까지 실행함. 이때 next 메서드가 반환한 이터레이터 리절트 객체의 done 프로퍼티 값이 false임
-   // TODO:
+<details>
+  <summary>
+  로그를 찍어봤습니다.
+  </summary>
+  <img width="1106" alt="스크린샷 2024-02-13 오전 12 33 38" src="https://github.com/dev-hamster/study-js-deep-dive/assets/123740296/6b367dff-3c36-4c4b-bb1d-aac7e474e6b6">    
+</details>
+
+
+
 
 ## 46.6 async/await
 
