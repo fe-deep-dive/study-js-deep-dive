@@ -443,7 +443,7 @@ async function fetchTodo() {
 fetchTodo();
 ```
 
-위 예제의 fetchTodo 함수의 catch문은 HTTP 통신에서 발생한 테느워크 에러뿐 아니라 try 코드 블록 내의 모든 문에서 발생한 일반적인 에러까지 모두 캐치함.
+위 예제의 fetchTodo 함수의 catch문은 HTTP 통신에서 발생한 네트워크 에러뿐 아니라 try 코드 블록 내의 모든 문에서 발생한 일반적인 에러까지 모두 캐치함.
 
 async 함수 내에서 catch 문을 사용해 에러를 처리하지 않으면 async 함수는 발생한 에러를 reject하는 프로미스를 반환함. 따라서 catch 후속 처리 메서드를 사용해 에러를 캐치할 수도 있음.
 
